@@ -14,6 +14,8 @@ public class RegisterServlet extends HttpServlet {
         HttpSession session = req.getSession();
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+
+        session.setAttribute("username", username);
     }
 
     @Override
