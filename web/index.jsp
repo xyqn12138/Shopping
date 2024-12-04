@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <%
+    pageContext.include("signin.html");
+  %>
   </body>
 </html>
