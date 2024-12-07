@@ -24,13 +24,13 @@
             </div>
             <span class="form__span">请使用手机号验证注册</span>
             <input class="form__input" id="username" name="username" value="${fromBean.username}" placeholder="用户名" required>
-            <span class="error">${fromBean.errors.username}</span>
+            <span class="error error1">${fromBean.errors.username}</span>
             <input class="form__input" type="password" id="password" name="password" value="${fromBean.password}" placeholder="密码" required>
-            <span class="error">${fromBean.errors.password}</span>
+            <span class="error error2">${fromBean.errors.password}</span>
             <input class="form__input" type="password" id="confirmPassword" name="confirmPassword" value="${fromBean.confirmPassword}" placeholder="确认密码" required>
-            <span class="error">${fromBean.errors.confirmPassword}</span>
+            <span class="error error3">${fromBean.errors.confirmPassword}</span>
             <input class="form__input" type="text" id="phoneNumber" name="phoneNumber" value="${fromBean.phoneNumber}" placeholder="手机号" required>
-            <span class="error">${fromBean.errors.phoneNumber}</span>
+            <span class="error error4">${fromBean.errors.phoneNumber}</span>
             <div class="yanbox">
                 <a href="" class="yan">获取验证码</a>
             </div>

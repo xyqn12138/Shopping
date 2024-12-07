@@ -272,13 +272,36 @@ body {
 .yanbox{
     position: absolute;
     right: 140px;
-    bottom: 192px;
-
+    bottom: 144px;
 }
 .yan{
     color: #5c636a;
     text-decoration: none;
 }
 .yan:hover{
+    color: red;
+}
+.error1{
+    position: absolute;
+    right: 140px;
+    bottom: 338px;
+    color: red;
+}
+.error2{
+    position: absolute;
+    right: 140px;
+    bottom: 288px;
+    color: red;
+}
+.error3{
+    position: absolute;
+    right: 140px;
+    bottom: 240px;
+    color: red;
+}
+.error4{
+    position: absolute;
+    right: 140px;
+    bottom: 192px;
     color: red;
 }
