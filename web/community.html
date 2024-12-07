@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/indexcss.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>社区</title>
     <style>
         body {
@@ -13,21 +18,21 @@
             background-size: cover;
 
         }
-        header {
-            background-color: rgb(223, 219, 17);
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .container {
+        .container1 {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
+            background-color:rgba(249, 249, 247, 0.7);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; 
         }
+
+    
         h1 {
             margin-top: 0;
+        }
+        h3{
+            color: black;
         }
         .post {
             border-bottom: 1px solid #ddd;
@@ -39,12 +44,14 @@
         .post-title {
             font-size: 1.5em;
             margin: 0 0 10px;
+            color: black;
         }
         .post-content {
             margin: 10px 0;
+            color:black
         }
         .post-image {
-            max-width: 70%;
+            max-width: 50%;
             height: auto;
             margin: 10px 0;
         }
@@ -54,8 +61,8 @@
             align-items: center;
         }
         .post-actions button {
-            background-color: rgb(223, 219, 17);
-            color: white;
+            background-color: rgb(173, 172, 124);
+            color: rgb(0, 0, 0);
             border: none;
             padding: 5px 10px;
             cursor: pointer;
@@ -75,25 +82,83 @@
             border-radius: 3px;
         }
         .comment {
-            background-color: #f9f9f9;
+            background-color: rgb(232, 247, 20)9;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 3px;
+            color:black;
         }
         .comment-image {
-            max-width: 50%;
+            max-width: 30%;
             height: auto;
             margin: 10px 0;
+        }
+        .global-comment-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:rgb(210, 212, 116);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .global-comment-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddf008;
+            border-radius: 3px;
+            resize: none; /* 禁止用户调整文本框大小 */
+        }
+        .global-comment-submit {
+            background-color: rgba(223, 220, 17, 0.979);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            align-self: flex-end; /* 将按钮右对齐 */
+        }
+        .global-comment-submit:hover {
+            background-color: #e6e600;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>社区</h1>
-</header>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="./img/logo.jpg" alt="" width="120" height="60">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 line3">
+              <li><a href="#" class="nav-link px-2 link-dark light">首页</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">其他</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">其他</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">其他</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./img/image.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
 
-<div class="container">
+<div class="container1">
     <div class="post">
         <h2 class="post-title">S</h2>
         <p class="post-content">B</p>
@@ -123,9 +188,15 @@
         </div>
         <div class="comment-section">
             <h3>评论区</h3>
-            暂无评论
+            <br>
+            <p>暂无评论</p>
         </div>
+</div>
     </div>
+</div>
+<div class="global-comment-section">
+    <textarea class="global-comment-input" placeholder="发表你的评论..." rows="4"></textarea>
+    <button class="global-comment-submit" disabled>提交评论</button>
 </div>
 
 </body>
