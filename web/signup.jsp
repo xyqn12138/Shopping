@@ -26,10 +26,11 @@
             <input class="form__input" type="text" placeholder="用户名">
             <input class="form__input" type="password" placeholder="密码">
             <input class="form__input" type="password" placeholder="确认密码">
-            <input class="phone" type="text" placeholder="手机号">
+            <input class="form__input" type="text" placeholder="手机号">
             <div class="yanbox">
                 <a href="" class="yan">获取验证码</a>
             </div>
+            <input name="fm-smscode" type="text" class="form__input" id="fm-smscode" tabindex="2" aria-label="请输入验证码" placeholder="请输入验证码" maxlength="6" autocomplete="off" autocapitalize="off">
             <input class="form__input" type="text" placeholder="验证码">
             <button class="form__button button submit">SIGN UP</button>
         </form>
