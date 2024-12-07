@@ -1,9 +1,11 @@
 package Servlet;
 
+import domain.DBUtil;
+import domain.RegisterFromBean;
+import domain.UserBean;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-import javabean.User;
 
 import java.io.IOException;
 
@@ -11,16 +13,34 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        User user = new User(username, password);
-        session.setAttribute("user", user);
-        Cookie cookie = new Cookie("JSESSIONID", session.getId());
-        cookie.setMaxAge(60 * 30);
-        cookie.setPath("/");
-        resp.addCookie(cookie);
-        resp.sendRedirect("signin.html");
+        String confirmPassword = req.getParameter("confirmPassword");
+        String phoneNumber = req.getParameter("phoneNumber");
+
+        RegisterFromBean fromBean = new RegisterFromBean(username, password, confirmPassword, phoneNumber);
+        boolean validate = fromBean.validate();
+        if (validate) {
+            // 注册成功
+            UserBean user = new UserBean(fromBean.getUsername(), fromBean.getPassword());
+            boolean result = DBUtil.getInstance().insertUser(user);
+            if (result) {
+                // 注册成功
+                req.setAttribute("username", user.getUsername());
+                req.getRequestDispatcher("/login.jsp").forward(req, resp);
+
+            }
+            else{
+                // 注册失败
+                req.setAttribute("reError", "该用户名已经存在");
+                req.getRequestDispatcher("/register.jsp").forward(req, resp);
+            }
+        }
+        else {
+            // 注册失败
+            req.setAttribute("fromBean", fromBean);
+            req.getRequestDispatcher("/register.jsp").forward(req, resp);
+        }
     }
 
     @Override
