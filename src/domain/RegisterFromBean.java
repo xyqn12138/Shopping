@@ -70,7 +70,7 @@ public class RegisterFromBean {
             flag = false;
         }
         assert phoneNumber != null;
-        if(phoneNumber.length() != 11) {
+        if(!phoneNumber.matches("\\d{11}")) {
             errors.put("phoneNumber", "请输入11位手机号");
             this.phoneNumber = "";
             flag = false;

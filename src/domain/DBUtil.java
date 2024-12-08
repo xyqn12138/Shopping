@@ -22,16 +22,10 @@ public class DBUtil {
         users.put(user.getUsername(), user);
         return true;
     }
-    public boolean verifyUser(String username, String password){
-        boolean flag = true;
-        UserBean user = getUser(username);
-        if(!username.equals(user.getUsername())){
-            flag = false;
-        }
-        if(!password.equals(user.getPassword())){
-            flag = false;
-        }
-        return flag;
+    public boolean verifyUser(String username, String password) {
+        UserBean user = users.get(username);
+        if(!users.containsKey(user.getUsername()))return false;
+        return password.equals(user.getPassword());
     }
 }
 

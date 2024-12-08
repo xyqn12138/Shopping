@@ -17,13 +17,13 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
         boolean flag = DBUtil.getInstance().verifyUser(username, password);
         if(flag){
-            resp.sendRedirect("index.html");
+            resp.sendRedirect("main.html");
         }
         else{
             req.setAttribute("msg","用户名或密码错误");
             req.setAttribute("username",username);
             req.setAttribute("password",password);
-            req.getRequestDispatcher("login.html").forward(req,resp);
+            req.getRequestDispatcher("login.jsp").forward(req,resp);
         }
     }
     @Override
