@@ -38,6 +38,18 @@ body {
     /*font-size: 25px;*/
     background-color: #aaaaaa;
 }
-.card-body form{
-    padding-left: 180px;
+.card-body button{
+    margin-left: 180px;
+}
+.card-body .title{
+    border: none;
+    background-color: white;
+}
+.card-body .price{
+    border: none;
+    background-color: white;
+}
+.card-body .seller{
+    border: none;
+    background-color: white;
 }
