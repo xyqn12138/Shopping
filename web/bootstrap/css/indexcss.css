@@ -56,3 +56,9 @@ body {
     background-color: white;
     outline: none;
 }
+.card-body .goodid{
+    border: none;
+    display: none;
+    background-color: white;
+    outline: none;
+}
