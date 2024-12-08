@@ -44,12 +44,15 @@ body {
 .card-body .title{
     border: none;
     background-color: white;
+    outline: none;
 }
 .card-body .price{
     border: none;
     background-color: white;
+    outline: none;
 }
 .card-body .seller{
     border: none;
     background-color: white;
+    outline: none;
 }
