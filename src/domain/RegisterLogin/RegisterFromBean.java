@@ -1,4 +1,4 @@
-package domain;
+package domain.RegisterLogin;
 
 import java.util.HashMap;
 

@@ -1,6 +1,6 @@
-package Servlet;
+package Servlet.RegisterLoginServlet;
 
-import domain.DBUtil;
+import domain.RegisterLogin.DBUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

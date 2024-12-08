@@ -1,8 +1,8 @@
-package Servlet;
+package Servlet.RegisterLoginServlet;
 
-import domain.DBUtil;
-import domain.RegisterFromBean;
-import domain.UserBean;
+import domain.RegisterLogin.DBUtil;
+import domain.RegisterLogin.RegisterFromBean;
+import domain.RegisterLogin.UserBean;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;

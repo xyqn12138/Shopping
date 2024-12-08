@@ -1,4 +1,4 @@
-package domain;
+package domain.RegisterLogin;
 
 public class UserBean {
     private String username;
