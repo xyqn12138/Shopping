@@ -1,5 +1,8 @@
 body {
-    background-color: #ecf0f3;
+    /*background-color: #ecf0f3;*/
+    background-image: url("/img/sign.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #a0a5a8;
 }
 .fakeimg {
@@ -43,7 +46,8 @@ body {
 }
 .card-body .title{
     border: none;
-    background-color: white;
+    /*background-color: white;*/
+    background-image: url("/img/left.png");
     outline: none;
 }
 .card-body .price{

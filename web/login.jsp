@@ -11,10 +11,8 @@
     <title>登录</title>
 
 </head>
-<body>
+<body style="background:url('./img/sign.jpg') no-repeat; background-size: cover;">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="main.css"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&amp;display=swap" rel="stylesheet">
 <div class="main">
     <div class="container b-container is-txl is-z200" id="b-container">
         <form class="form" id="b-form" method="post" action="login">
@@ -32,12 +30,12 @@
         </form>
     </div>
     <div class="switch is-txr" id="switch-cnt">
-        <div class="switch__circle is-txr"></div>
-        <div class="switch__circle switch__circle--t is-txr"></div>
+        <!--        <div class="switch__circle is-txr"></div>-->
+        <!--        <div class="switch__circle switch__circle&#45;&#45;t is-txr"></div>-->
         <div class="switch__container" id="switch-c2">
             <h2 class="switch__title title">欢迎使用 !</h2>
             <p class="switch__description description">注册属于你的账号并开启你的旅程吧</p>
-            <button class="switch__button button switch-btn"><a href="register.jsp">注册</a></button>
+            <button class="switch__button button switch-btn"><a style="color: white; text-decoration: none" href="register.jsp">注册</a></button>
         </div>
     </div>
 </div>
