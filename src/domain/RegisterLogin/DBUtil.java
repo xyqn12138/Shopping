@@ -23,6 +23,7 @@ public class DBUtil {
         return true;
     }
     public boolean verifyUser(String username, String password) {
+        if(users.isEmpty())return false;
         UserBean user = users.get(username);
         if(!users.containsKey(user.getUsername()))return false;
         return password.equals(user.getPassword());
