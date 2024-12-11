@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url(../../img/nailong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+.container1 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:rgba(249, 249, 247, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; 
+}
+
+
+h1 {
+    margin-top: 0;
+}
+h3{
+    color: black;
+}
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.post:last-child {
+    border-bottom: none;
+}
+.post-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: black;
+}
+.post-content {
+    margin: 10px 0;
+    color:black
+}
+.post-image {
+    max-width: 50%;
+    height: auto;
+    margin: 10px 0;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-actions button {
+    background-color: rgb(173, 172, 124);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.post-actions button:hover {
+    background-color: rgb(223, 219, 17);
+}
+.comment-section {
+    margin-top: 20px;
+}
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.comment {
+    background-color: rgb(232, 247, 20)9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    color:black;
+}
+.comment-image {
+    max-width: 30%;
+    height: auto;
+    margin: 10px 0;
+}
+.global-comment-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:rgb(210, 212, 116);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.global-comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddf008;
+    border-radius: 3px;
+    resize: none; /* 禁止用户调整文本框大小 */
+}
+.global-comment-submit {
+    background-color: rgba(223, 220, 17, 0.979);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    align-self: flex-end; /* 将按钮右对齐 */
+}
+.global-comment-submit:hover {
+    background-color: #e6e600;
+}
