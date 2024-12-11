@@ -12,7 +12,7 @@
     <script src="./sign.js"></script>
     <title>注册</title>
 </head>
-<body>
+<body style="background:url('./img/sign.jpg') no-repeat; background-size: cover;">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 <meta charset="utf-8">
 <div class="main">
@@ -40,8 +40,8 @@
         </form>
     </div>
     <div class="switch" id="switch-cnt">
-        <div class="switch__circle"></div>
-        <div class="switch__circle switch__circle--t"></div>
+<%--        <div class="switch__circle"></div>--%>
+<%--        <div class="switch__circle switch__circle--t"></div>--%>
         <div class="switch__container" id="switch-c1">
             <h2 class="switch__title title">欢迎回来 !</h2>
             <p class="switch__description description">为了让您有更好的体验，请登录后使用</p>
