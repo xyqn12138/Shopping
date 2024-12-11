@@ -28,7 +28,7 @@ body {
     margin: 10px;
 }
 .light{
-    background-color: #aaaaaa;
+    background-color: #edbf54;
 }
 .line3 li{
     height: 50px;
@@ -39,7 +39,7 @@ body {
 }
 .line3 li:hover{
     /*font-size: 25px;*/
-    background-color: #aaaaaa;
+    background-color: #edbf54;
 }
 .card-body button{
     margin-left: 180px;
