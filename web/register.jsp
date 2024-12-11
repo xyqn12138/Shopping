@@ -12,7 +12,7 @@
     <script src="./sign.js"></script>
     <title>注册</title>
 </head>
-<body style="background:url('./img/sign.jpg') no-repeat; background-size: cover;">
+<body style="background:url('./img/left.png') no-repeat; background-size: cover;">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 <meta charset="utf-8">
 <div class="main">

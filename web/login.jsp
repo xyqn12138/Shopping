@@ -11,7 +11,7 @@
     <title>登录</title>
 
 </head>
-<body style="background:url('./img/sign.jpg') no-repeat; background-size: cover;">
+<body style="background:url('./img/left.png') no-repeat; background-size: cover;">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 <div class="main">
     <div class="container b-container is-txl is-z200" id="b-container">

@@ -22,12 +22,12 @@ body {
 .main {
     position: relative;
     /*position: absolute;*/
-    left: 100px;
-    top: 50px;
-    width: 100px;
-    min-width: 900px;
+    left: 70px;
+    top: 30px;
+    width: 90px;
+    min-width: 850px;
     min-height: 600px;
-    height: 600px;
+    height: 300px;
     padding: 25px;
     background-color: rgba(0,0,0,0);
 
@@ -146,7 +146,7 @@ body {
     width: 180px;
     height: 50px;
     border-radius: 25px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1.15px;
@@ -280,7 +280,7 @@ body {
 .yanbox{
     position: absolute;
     right: 140px;
-    bottom: 144px;
+    bottom: 180px;
 }
 .yan{
     color: #5c636a;
@@ -292,24 +292,24 @@ body {
 .error1{
     position: absolute;
     right: 140px;
-    bottom: 338px;
+    bottom: 328px;
     color: red;
 }
 .error2{
     position: absolute;
     right: 140px;
-    bottom: 288px;
+    bottom: 280px;
     color: red;
 }
 .error3{
     position: absolute;
     right: 140px;
-    bottom: 240px;
+    bottom: 228px;
     color: red;
 }
 .error4{
     position: absolute;
     right: 140px;
-    bottom: 192px;
+    bottom: 180px;
     color: red;
 }
