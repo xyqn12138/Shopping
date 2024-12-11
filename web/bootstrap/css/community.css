@@ -61,6 +61,8 @@ h3{
 }
 .comment-section {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .comment-input {
     width: 100%;
@@ -75,6 +77,8 @@ h3{
     margin-bottom: 10px;
     border-radius: 3px;
     color:black;
+    display: flex;
+    flex-direction: column;
 }
 .comment-image {
     max-width: 30%;
@@ -108,6 +112,32 @@ h3{
     border-radius: 3px;
     align-self: flex-end; /* 将按钮右对齐 */
 }
+.global-comment-submit2 {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #ddf008;
+}
+.global-comment-submit3 {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: auto; 
+    
+}
 .global-comment-submit:hover {
     background-color: #e6e600;
 }
+.global-comment-submit2:hover {
+    background-color: #4b4b48;
+}
+.global-comment-submit3:hover {
+    background-color: #2f502f;
+}
+.gps{
+    display: inline-block;
+};
