@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    /* background: url(../../img/nailong.jpg);
+     background: url(../../img/bg.png);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 
 }
 .container1 {
@@ -30,9 +30,9 @@ h3{
     border-bottom: none;
 }
 .post-title {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0 0 10px;
-    color: black;
+    color: #6c6c6c;
 }
 .post-content {
     margin: 10px 0;
@@ -72,7 +72,7 @@ h3{
     border-radius: 3px;
 }
 .comment {
-    background-color: rgb(232, 247, 20)9;
+    background-color: rgb(239, 215, 182);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -89,7 +89,7 @@ h3{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color:rgb(210, 212, 116);
+    background-color: rgb(228, 213, 137);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ h3{
     resize: none; /* 禁止用户调整文本框大小 */
 }
 .global-comment-submit {
-    background-color: rgba(223, 220, 17, 0.979);
+    background-color: rgba(237, 237, 154, 0.98);
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
@@ -140,4 +140,4 @@ h3{
 }
 .gps{
     display: inline-block;
-};
+}

@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="cart-container">
+    <span><a href="main.html">返回首页</a></span>
     <h2>我的购物车</h2>
 
     <table>
