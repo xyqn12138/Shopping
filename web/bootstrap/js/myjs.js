@@ -23,3 +23,24 @@ $(document).ready(function() {
         });
     });
 });
+
+
+document.getElementById('get-verification-code').addEventListener('click', function(event) {
+    event.preventDefault(); // 防止默认行为（例如跳转）
+
+    var countdownElement = document.getElementById('countdown');
+    var getVerificationCodeLink = this;
+
+    var count = 60;
+    countdownElement.style.display = 'inline';
+    getVerificationCodeLink.style.display = 'none'; // 隐藏链接
+
+    var interval = setInterval(function() {
+        countdownElement.textContent = '重新发送 (' + count + ')';
+        if (--count < 0) {
+            clearInterval(interval);
+            countdownElement.style.display = 'none';
+            getVerificationCodeLink.style.display = 'inline'; // 恢复链接显示
+        }
+    }, 1000); // 每秒执行一次
+});

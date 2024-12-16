@@ -33,7 +33,8 @@
             <input class="form__input" type="text" id="phoneNumber" name="phoneNumber" value="${fromBean.phoneNumber}" placeholder="手机号" required>
             <span class="error4">${fromBean.errors.phoneNumber}</span>
             <div class="yanbox">
-                <a href="" class="yan" onclick="return false">获取验证码</a>
+                <span id="countdown" style="display:none;">重新发送 (60)</span>
+                <a href="#" id="get-verification-code" class="yan">获取验证码</a>
             </div>
             <input class="form__input" type="text" placeholder="验证码">
             <button class="form__button button submit">注册</button>
@@ -49,5 +50,6 @@
         </div>
     </div>
 </div>
+<script src="./bootstrap/js/myjs.js"></script>
 </body>
 </html>
